@@ -16,18 +16,18 @@ variable "hosted-zone" {
   description = "The name of the dns zone on Route 53 that will be used as the master zone "
 }
 
-// # AWS
+# AWS
 
-// variable "create_aws_dns_zone" {
-//   description = "Set to true if you want to deploy the AWS delegated zone."
-//   type        = bool
-//   default     = "false"
-// }
+variable "create_aws_dns_zone" {
+  description = "Set to true if you want to deploy the AWS delegated zone."
+  type        = bool
+  default     = "false"
+}
 
-// variable "aws_region" {
-//   description = "The region to create resources."
-//   default     = "eu-west-2"
-// }
+variable "aws_region" {
+  description = "The region to create resources."
+  default     = "eu-west-2"
+}
 
 // # Azure
 
@@ -44,17 +44,17 @@ variable "hosted-zone" {
 
 # GCP
 
-variable "create_gcp_dns_zone" {
-  description = "Set to true if you want to deploy the Azure delegated zone."
-  type        = bool
-  default     = "false"
-}
+// variable "create_gcp_dns_zone" {
+//   description = "Set to true if you want to deploy the Azure delegated zone."
+//   type        = bool
+//   default     = "false"
+// }
 
-variable "gcp_project" {
-  description = "GCP project name"
-}
+// variable "gcp_project" {
+//   description = "GCP project name"
+// }
 
-variable "gcp_region" {
-  description = "GCP region, e.g. us-east1"
-  default     = "europe-west3"
-}
+// variable "gcp_region" {
+//   description = "GCP region, e.g. us-east1"
+//   default     = "europe-west3"
+// }
